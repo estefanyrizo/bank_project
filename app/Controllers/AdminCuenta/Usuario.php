@@ -1,6 +1,7 @@
 <?php
 namespace App\Controllers\AdminCuenta;
 use App\Controllers\BaseController;
+use App\Models\UsuarioModel;
 
 class Usuario extends BaseController
 {
@@ -10,6 +11,8 @@ class Usuario extends BaseController
     }
     public function agregar()
     {
+
+        $db_model = new UsuarioModel();
         $request = \Config\Services::request();
         $registro = [
             'num_cedula' => $request->getPost('cedula'),
@@ -17,8 +20,10 @@ class Usuario extends BaseController
             'direccion' => $request->getPost('direccion'),
             'nombre' => $request->getPost('nombre'),
             'primer_apellido' => $request->getPost('apellido1'),
-            'primer_apellido' => $request->getPost('apellido2')
+            'segundo_apellido' => $request->getPost('apellido2')
         ];
+
+        $db_model->create($registro);
     }
 }
 

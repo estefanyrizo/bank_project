@@ -18,7 +18,7 @@
 <body>
 
     <div class="container mt-5">
-        <form>
+        <form method="post" action=<?php echo base_url() . "/usuario/registro"?>>
             <div class="form-group">
                 <label for="nombre">Nombre</label>
                 <input type="text" class="form-control" id="nombre" name="nombre">
