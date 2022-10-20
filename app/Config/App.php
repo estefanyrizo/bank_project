@@ -25,7 +25,7 @@ class App extends BaseConfig
      * @var string
      */
     /*public $baseURL = 'http://localhost:8080/';*/
-	public $baseURL = 'http://localhost/bank_project_ci/';
+	public $baseURL = 'http://localhost:8080/bank_project/';
     
 
     /**

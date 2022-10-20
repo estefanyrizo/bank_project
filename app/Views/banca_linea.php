@@ -10,7 +10,7 @@
 		<meta name="description" content="Acceso al servicio de banca en linea">
 		<meta name="author" content="Diseño de Aplicaciones Web">
 
-		<link rel="stylesheet" href="<?php echo base_url() . '/css/bootstrap.min.css"'; ?>>
+		<link rel="stylesheet" href=<?php echo base_url() . "/css/bootstrap.min.css"; ?>>
 
 	</head>
 	<body>
@@ -151,8 +151,8 @@
 			</div>
 		</div>
 
-		<script src="js/jquery.min.js"> </script>
-		<script src="js/bootstrap.min.js"> </script>
-		<script src="js/scripts.js"> </script>
+		<script src=<?php echo base_url() . "js/jquery.min.js"?>> </script>
+		<script src=<?php echo base_url() . "js/bootstrap.min.js"?>> </script>
+		<script src=<?php echo base_url() . "js/scripts.js"?>> </script>
 	</body>
 </html>
